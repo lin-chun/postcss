@@ -1,0 +1,83 @@
+/* Testing autoprefixer */
+.autoprefixer {
+    display: flex;
+}
+.demo {
+  display: flex;
+  transform: rotate(90deg);
+}
+/* Testing cssnext */
+.cssnext {
+    background: color(red alpha(-10%));
+}
+:root {
+  --mainColor: red;
+  --danger-theme: {
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid green;
+  };
+}
+a {
+  color: color(var(--mainColor) alpha(90%));
+}
+.danger {
+  @apply --danger-theme;
+}
+/* Testing precss */
+.precss {
+    @if 3 < 5 {
+        background: green;
+    }
+    @else {
+        background: blue;
+    }
+}
+
+/* Testing alias */
+@alias {
+    bsz: border-size;
+    bst: border-style;
+    bcl: border-color;
+}
+.set_border {
+    bsz: 1px;
+    bst: solid;
+    bcl: #ccc;
+}
+
+/* Testing crip */
+.crip_shorthand {
+    mt: 1rem;
+    mr: 2rem;
+    mb: 3rem;
+    ml: 4rem;
+}
+
+/* Testing circle */
+.circle {
+  circle: 8rem #c00;
+}
+
+/* Testing triangle */
+.triangle {
+    triangle: pointing-right;
+    width: 7rem;
+    height: 8rem;
+    background-color: #c00;
+}
+
+/* Testing linkcolor */
+/*a {
+  @link-colors all red;
+}*/
+
+/* Testing postcss-center */
+.circle_center {
+    circle: 8rem #c00;
+    left: center;
+}
+.circle_wrap {
+    position: relative;
+    height: 8rem;
+}

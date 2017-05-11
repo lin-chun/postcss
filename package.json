@@ -1,0 +1,51 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "study postcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lin-chun/postcss.git"
+  },
+  "keywords": [
+    "linchun"
+  ],
+  "author": "linchun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lin-chun/postcss/issues"
+  },
+  "homepage": "https://github.com/lin-chun/postcss#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "postcss-alias": "^1.0.0",
+    "postcss-all-link-colors": "^1.0.1",
+    "postcss-apply": "^0.7.0",
+    "postcss-center": "^1.0.0",
+    "postcss-circle": "^1.0.0",
+    "postcss-crip": "^2.0.1",
+    "postcss-triangle": "^1.0.1",
+    "precss": "^1.4.0",
+    "stylus": "^0.54.5"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie 9-10"
+  ]
+}

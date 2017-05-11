@@ -1,0 +1,87 @@
+/* Testing autoprefixer */
+.autoprefixer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/* Testing cssnext */
+.cssnext {
+    background: rgba(255, 0, 0, 0.9);
+}
+:root --danger-theme: {
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid green;
+};
+a {
+  color: rgba(255, 0, 0, 0.9);
+}
+.danger {
+  @apply --danger-theme;
+}
+/* Testing precss */
+.precss {
+        background: green
+}
+
+/* Testing alias */
+.set_border {
+    border-size: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+/* Testing crip */
+.crip_shorthand {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+}
+
+/* Testing circle */
+.circle {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  background-color: #c00;
+}
+
+/* Testing triangle */
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4rem 0 4rem 7rem;
+    border-left-color: #c00;
+}
+
+/* Testing linkcolor */
+/*a {
+  @link-colors all red;
+}*/
+
+/* Testing postcss-center */
+.circle_center {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    background-color: #c00;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+}
+.circle_wrap {
+    position: relative;
+    height: 8rem;
+}
